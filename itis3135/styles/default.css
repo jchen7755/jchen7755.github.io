@@ -10,6 +10,9 @@ a {
     color: darkslategray;
     text-decoration: line;
 }
+a hover {
+    color: rgb(65, 122, 237);
+}
 
 main {
     text-align: line;
