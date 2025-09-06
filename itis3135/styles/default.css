@@ -10,7 +10,7 @@ a {
     color: darkslategray;
     text-decoration: line;
 }
-a hover {
+a:hover {
     color: rgb(65, 122, 237);
 }
 
