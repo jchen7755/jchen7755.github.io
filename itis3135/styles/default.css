@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(123, 123, 231);
+    text-align: center;
+    color: rgb(24, 20, 20);
+    font-family: monospace;
+
+}
+
+a {
+    color: darkslategray;
+    text-decoration: line;
+}
+
+main {
+    text-align: line;
+    margin-left: 20;
+    margin-right: 20;
+}
+
+h2 {
+    text-emphasis: center;
+}
