@@ -23,3 +23,12 @@ main {
 h2 {
     text-emphasis: center;
 }
+
+img {
+    width: 50%;
+}
+
+figure {
+    text-align: center;
+    font-style: italic;
+}
