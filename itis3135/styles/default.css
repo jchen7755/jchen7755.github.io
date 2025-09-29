@@ -32,3 +32,11 @@ figure {
     text-align: center;
     font-style: italic;
 }
+
+h3 {
+    text-emphasis: center;
+}
+
+ul {
+    color: blueviolet;
+}
