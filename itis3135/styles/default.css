@@ -13,12 +13,15 @@ a {
 
 a:hover {
     color: rgb(65, 122, 237);
+    text-decoration: underline;
 }
 
 main {
     text-align: line;
-    margin-left: 20;
-    margin-right: 20;
+    margin: 0 auto;
+    width: 85%;
+    max-width: 1200px;
+    min-width: 320px;
 }
 
 h2 {
@@ -26,7 +29,18 @@ h2 {
 }
 
 img {
-    width: 50%;
+    width: auto;
+    height: auto;
+}
+
+.wireframe-img {
+    max-width: 100%;             
+    width: auto;                 
+    height: auto;                
+    display: block;
+    margin: 0 auto;
+    image-rendering: auto;       
+    max-height: 675px;           
 }
 
 figure {
@@ -34,10 +48,115 @@ figure {
     font-style: italic;
 }
 
+li {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+header {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 15px;
+    border: 3px solid #5A5A5A;
+    border-radius: 10px;
+    background-color: rgba(255, 248, 225, 0.9);
+    width: 90%;
+    margin: 20px auto;
+}
+
+nav {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    width: 100%;
+}
+.separator {
+    font-size: 1em;
+    line-height: 1;
+    vertical-align: middle;
+    opacity: 0.8;
+}
+.bottom-nav {
+    display: flex;
+    gap: 10px;
+    padding: 6px 12px;
+    background-color: transparent;
+}
+.bottom-nav a {
+    color: blue;
+}
+.bottom-nav .spacer {
+    font-size: 1em;
+    line-height: 1;
+    vertical-align: middle;
+    opacity: 0.7;
+}
+nav a {
+    color: blue;
+    font-weight: normal;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+nav a:hover {
+    background-color: red;
+    color: white;
+}
+
+
 h3 {
     text-emphasis: center;
 }
 
 ul {
     color: blueviolet;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+    nav ul {
+        flex-direction: column; 
+    }
+}
+@media screen and (max-width: 480px) {
+    main {
+        width: 95%;
+    }
+    h1 {
+        font-size: 1.5em; 
+    }
+    nav {
+        display: block; 
+    }
+    nav a, .separator {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+}
+    nav ul {
+        padding: 0;
+        text-align: center;
+    }
+    nav li {
+        display: block;
+        margin: 5px 0;
+    }
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1400px; 
+    }
+    body {
+        font-size: 18px;
+    }
 }
