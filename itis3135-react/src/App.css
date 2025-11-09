@@ -1,0 +1,139 @@
+body {
+  background-color: rgb(255, 218, 139);
+  text-align: center;
+  color: rgb(24, 20, 20);
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: darkslategray;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(65, 122, 237);
+  text-decoration: underline;
+}
+
+main {
+  text-align: left;
+  margin: 0 auto;
+  width: 85%;
+  max-width: 1200px;
+  min-width: 320px;
+  padding: 20px 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  text-align: center;
+  font-style: italic;
+}
+
+li {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 15px;
+  border: 3px solid #5A5A5A;
+  border-radius: 10px;
+  background-color: rgba(255, 248, 225, 0.9);
+  width: 90%;
+  margin: 20px auto;
+}
+
+nav {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: blue;
+  font-weight: normal;
+  padding: 5px 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: red;
+  color: white;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-nav {
+  margin-bottom: 15px;
+}
+
+.footer-info {
+  font-size: 0.9em;
+}
+
+.validation-badges {
+  margin-top: 10px;
+}
+
+.validation-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  background-color: rgba(255, 248, 225, 0.5);
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    width: 95%;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav a, nav span {
+    display: block;
+    margin: 5px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 1400px;
+  }
+  body {
+    font-size: 18px;
+  }
+}
