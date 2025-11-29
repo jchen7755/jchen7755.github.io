@@ -1,3 +1,10 @@
+// Helper function to escape HTML characters - MOVED TO TOP
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
 function generateJSON() {
     // Get form values
     const name = document.getElementById('name').value;
@@ -12,9 +19,9 @@ function generateJSON() {
     const funny = document.getElementById('funny').value;
     const anything = document.getElementById('anything').value;
 
-    // Get all courses
+    // Get all courses - FIXED: Added parentheses around arrow function parameter
     const courseInputs = document.querySelectorAll('input[name="course"]');
-    const courses = Array.from(courseInputs).map(input => input.value).filter(val => val.trim() !== '');
+    const courses = Array.from(courseInputs).map((input) => input.value).filter((val) => val.trim() !== '');
 
     // Get image data
     let imageData = '';
@@ -68,11 +75,4 @@ function generateJSON() {
 
     // Hide the form
     document.getElementById('formSection').style.display = 'none';
-}
-
-// Helper function to escape HTML characters
-function escapeHtml(text) {
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML;
 }
